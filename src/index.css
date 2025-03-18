@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+.input {
+  @apply w-full p-3 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Global Styling */
+.template-container {
+  font-family: 'Arial', sans-serif;
+  background: #f7fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Resume Wrapper - A4 Size */
+.resume-wrapper {
+  width: 210mm;
+  min-height: 297mm;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.contact, .address {
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #4299e1;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Bullet List */
+.section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Button */
+.download-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.download-button:hover {
+  background: #3182ce;
+}
+
+.download-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .template-container {
+    padding: 1rem;
+  }
+
+  .resume-wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+//one
